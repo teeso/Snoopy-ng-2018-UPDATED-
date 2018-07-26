@@ -1,3 +1,4 @@
+
 BeagleBone Setup:
 
 1. Install base Ubuntu Image on an SD card:
