@@ -13,11 +13,17 @@
                                             |__/       \______/
                             
                                                    Version: 2.0
-    Code:    glenn@sensepost.com // @glennzw
-    Visit:   www.sensepost.com // @sensepost
+    Code:    glenn@sensepost.com // @glennzw ~~ Updated By Vincent Cook Director of Cyb3rHacks
+    Visit:   www.sensepost.com // @sensepost ~~ This is the orgininal developer, go check him out
     License: Non-commercial use
 
 Welcome to Snoopy Version 2.0!
+
+========================================
+
+This version of Snoopy was updated By Vincent Cook for 2018.2 Kali linux users. In this file there is the complete installation process and fixs for many errors.
+
+========================================
 
 0. Quick Setup
 ==============
