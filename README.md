@@ -80,7 +80,7 @@ python setup.py install
 
 #Open new terminal:
 
-rm -r /root/snoopy-ng/plugins/mitmproxy.py
+rm -r /root/Snoopy-ng-2018-UPDATED-/plugins/mitmproxy.py
 
 cd Snoopy-ng-2018-UPDATED-
 bash install.sh
