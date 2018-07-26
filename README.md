@@ -82,8 +82,7 @@ python setup.py install
 
 rm -r /root/Snoopy-ng-2018-UPDATED-/plugins/mitmproxy.py
 
-cd Snoopy-ng-2018-UPDATED-
-bash install.sh
+cd Snoopy-ng-2018-UPDATED- && bash install.sh
 
 **KNOWN ERRORS FOR INSTALLATION OF INSTALL.SH**
 
