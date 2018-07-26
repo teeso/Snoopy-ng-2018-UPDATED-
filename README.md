@@ -13,11 +13,12 @@
                                             |__/       \______/
                             
                                                    Version: 2.0
-    Code:    glenn@sensepost.com // @glennzw ~~ Updated By Vincent Cook Director of Cyb3rHacks
+    Code:    glenn@sensepost.com // @glennzw
+    UPDATED CODE: Cyb3rhacks@outlook.com // Updated By Vincent Cook Director of Cyb3rHacks    
     Visit:   www.sensepost.com // @sensepost ~~ This is the orgininal developer, go check him out
     License: Non-commercial use
 
-Welcome to Snoopy Version 2.0!
+Welcome to Snoopy Version 2.0.1!
 
 ========================================
 
