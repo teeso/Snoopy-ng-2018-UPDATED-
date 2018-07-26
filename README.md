@@ -63,14 +63,14 @@ sudo pip install ./setup/scapy-latest-snoopy_patch.tar.gz
 
 cd Pyrit/
 
-*python setup.py clean
-*python setup.py build
-*python setup.py install
+**python setup.py clean
+**python setup.py build
+**python setup.py install
 
-*systemctl stop postgresql.service
-*systemctl disable postgresql.service
-*systemctl stop exim4.service
-*systemctl disable exim4.service
+**systemctl stop postgresql.service
+**systemctl disable postgresql.service
+**systemctl stop exim4.service
+**systemctl disable exim4.service
 
 git clone http://www.tablix.org/~avian/git/publicsuffix.git
 
