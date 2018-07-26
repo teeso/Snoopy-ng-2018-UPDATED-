@@ -84,6 +84,8 @@ rm -r /root/Snoopy-ng-2018-UPDATED-/plugins/mitmproxy.py
 
 cd Snoopy-ng-2018-UPDATED- && bash install.sh
 
+snoopy
+
 **KNOWN ERRORS FOR INSTALLATION OF INSTALL.SH**
 
 ERROR 01:
