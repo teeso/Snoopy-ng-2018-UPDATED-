@@ -35,8 +35,8 @@ Strapped for time? Try this:
  
  _Server:_
  
-    snoopy_auth --create myDrone     # Create account
-    snoopy -v -m server              # Start server plugin
+    snoopy_auth -c myDrone     # Create account with drone - myDrone can be replaced with anything
+    snoopy -v -m server        # Start server plugin
 
 _Client:_
  
