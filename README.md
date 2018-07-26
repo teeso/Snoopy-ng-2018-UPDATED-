@@ -79,6 +79,7 @@ cd publicsuffix
 python setup.py install
 
 #Open new terminal:
+
 rm -r /root/snoopy-ng/plugins/mitmproxy.py
 
 cd Snoopy-ng-2018-UPDATED-
@@ -86,7 +87,39 @@ bash install.sh
 
 **KNOWN ERRORS FOR INSTALLATION OF INSTALL.SH**
 
+ERROR 01:
+E: Could not get lock...
+E: Unable to lock the administration directory...
 
+FIX:
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+
+ERROR 02:
+**ImportError: cannot import name urllib_parse**
+
+FIX:
+#Go to the directory - 
+usr/lib/python2.7/dist-packages/cryptography/x509/general_name.py
+#Replace this: 'from six.moves import urllib_parse' with:
+
+import six
+
+if six.PY3:
+
+	import urllib.parse
+
+else:
+
+	import urllib
+	import urlparse
+
+ERROR 03:
+E: No module named gps3
+
+FIX: 
+pip install gps3
 
 **To save data from the wireless, sysinfo, and heartbeat plugins locally:**
 
