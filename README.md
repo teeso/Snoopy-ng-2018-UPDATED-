@@ -45,7 +45,46 @@ git clone https://github.com/Cyb3rHacks/Snoopy-ng-2018-UPDATED-.git
 
 virtualenv /root/Snoopy-ng-2018-UPDATED-/venv
 
-source ./snoopy-ng/venv/bin/activate
+source /root/Snoopy-ng-2018-UPDATED-/venv/bin/activate
+
+cd Snoopy-ng-2018-UPDATED-
+
+sed -i 's/.*from gps import.*/from gps3 import gps3/' ./plugins/gpsd.py
+
+sed -i 's/from libmproxy/from mitmproxy/' ./includes/mitm.py
+
+pip install BeautifulSoup Pillow cryptography epeg-cffi gps3 httplib2 mitmproxy netifaces netlib psutil pyOpenSSL pyasn1 pyinotify python-dateutil requests scapy sqlalchemy psycopg2
+
+cd ~/Snoopy-ng-2018-UPDATED-/ && git clone https://github.com/JPaulMora/Pyrit.git
+
+apt-get remove python-scapy
+
+sudo pip install ./setup/scapy-latest-snoopy_patch.tar.gz
+
+cd Pyrit/
+
+python setup.py clean
+python setup.py build
+python setup.py install
+
+systemctl stop postgresql.service
+systemctl disable postgresql.service
+systemctl stop exim4.service
+systemctl disable exim4.service
+
+git clone http://www.tablix.org/~avian/git/publicsuffix.git
+
+cd publicsuffix
+
+python setup.py install
+
+#Open new terminal:
+rm -r /root/snoopy-ng/plugins/mitmproxy.py
+
+cd Snoopy-ng-2018-UPDATED-
+bash install.sh
+
+**KNOWN ERRORS FOR INSTALLATION OF INSTALL.SH**
 
 
 
