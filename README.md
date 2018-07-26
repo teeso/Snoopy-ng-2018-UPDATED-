@@ -30,9 +30,24 @@ This version of Snoopy was updated By Vincent Cook for 2018.2 Kali linux users. 
 ==============
 Strapped for time? Try this:
 
-**To install and setup Snoopy:**
+**To install and setup Snoopy - THESE COMMANDS MUST BE RUN SEPARATELY IN TERMINAL TO WORK!:**
 
-    bash install.sh
+apt-get update && apt-get upgrade
+
+apt-get install python-libpcap
+
+apt-get install gcc make autoconf git python-pip python-dev build-essential libffi-dev libssl-dev libjpeg-dev libxml2-dev libxslt1-dev python-dev tcpdump libpcap-dev vim postgresql libpq-dev
+
+pip install --upgrade pip
+pip install --upgrade virtualenv
+
+git clone https://github.com/Cyb3rHacks/Snoopy-ng-2018-UPDATED-.git
+
+virtualenv /root/Snoopy-ng-2018-UPDATED-/venv
+
+source ./snoopy-ng/venv/bin/activate
+
+
 
 **To save data from the wireless, sysinfo, and heartbeat plugins locally:**
 
