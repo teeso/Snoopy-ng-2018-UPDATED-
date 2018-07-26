@@ -121,6 +121,9 @@ E: No module named gps3
 FIX: 
 pip install gps3
 
+
+
+
 **To save data from the wireless, sysinfo, and heartbeat plugins locally:**
 
     snoopy -v -m wifi:mon=True -m sysinfo -m heartbeat -d myDrone -l London
